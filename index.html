@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Cambio</title>
+</head>
+<body>
+    <h1>Casa De Cambio</h1>
+    <br>
+    <form id="registroForm">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" required><br><br>
+        
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" required><br><br>
+        
+        <label for="saldo">Saldo (en pesos):</label>
+        <input type="number" id="saldo" required><br><br>
+        
+        <button type="submit">Registrarse</button>
+    </form>
+    <br>
+
+    <div id="mensajeRegistro" style="display: none;">
+        Usuario creado exitosamente.
+    </div>
+
+    <h1>Iniciar Sesión</h1>
+    <form id="inicioSesionForm">
+        <label for="usuarioLogin">Usuario:</label>
+        <input type="text" id="usuarioLogin" required><br><br>
+        
+        <label for="contrasenaLogin">Contraseña:</label>
+        <input type="password" id="contrasenaLogin" required><br><br>
+        
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+    <br>
+
+    <div id="mensajeInicioSesion" style="display: none;"></div>
+    
+    <h1>Operaciones</h1>
+    <form id="operacionesForm" style="display: none;">
+        <label for="monto">Monto a convertir:</label>
+        <input type="number" id="monto" required><br><br>
+        
+        <label for="moneda">Convertir a:</label>
+        <select id="moneda">
+            <option value="dolares">Dólares</option>
+            <option value="euros">Euros</option>
+        </select><br><br>
+        
+        <button type="submit">Calcular</button>
+    </form>
+    <br>
+
+    <div id="resultadoOperacion" style="display: none;"></div>
+    
+    <script  src="./index.js"> </script>
+</body>
+</html>
